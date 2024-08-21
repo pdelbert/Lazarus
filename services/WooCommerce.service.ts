@@ -1,8 +1,7 @@
 const WooCommerceRestApi = require("@woocommerce/woocommerce-rest-api").default;
-const API_URL = `${process.env.BASE_URL_WOOCOMMERCE}`;
 
 const WooCommerce = new WooCommerceRestApi({
-    url: API_URL,
+    url: process.env.BASE_URL_WOOCOMMERCE,
     consumerKey: process.env.CONSUMER_KEY,
     consumerSecret: process.env.CONSUMER_SECRET,
     version: 'wc/v3',
