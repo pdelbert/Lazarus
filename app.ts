@@ -13,8 +13,6 @@ app.use(bodyParser.json());
 //App Routes
 app.use(routes);
 
-//app.use('/products', console.log('products'));
-
 app.listen(PORT, () => {
     console.log(`🍔 Lazarus Server - Listening Port: ${PORT}`);
 })
