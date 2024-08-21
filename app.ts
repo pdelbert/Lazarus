@@ -16,5 +16,5 @@ app.use(routes);
 //app.use('/products', console.log('products'));
 
 app.listen(PORT, () => {
-    console.log(`🍔 Whoopper Server - Listening Port: ${PORT}`);
+    console.log(`🍔 Lazarus Server - Listening Port: ${PORT}`);
 })

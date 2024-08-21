@@ -1,4 +1,4 @@
-import express from "express";
+import { Router } from "express";
 
 import { 
     getAll, 
@@ -17,7 +17,7 @@ import {
     getAllProductVariation,
 } from "../../controller/productController";
 
-const usersRoute = express.Router();
+const usersRoute = Router();
 
 
 usersRoute.get('/', getAll);

@@ -1,11 +1,11 @@
-import express from "express";
+import { Router } from "express";
 import 'dotenv/config'
 
 import routeUsers from "./user";
 import routeProducts from "./products";
 import routeCustomers from "./customers";
 
-const v1Route = express.Router();
+const v1Route = Router();
 
 
 v1Route.use('/user', routeUsers);

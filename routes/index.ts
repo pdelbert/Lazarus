@@ -1,8 +1,7 @@
-const express = require('express');
-
+import { Router } from "express";
 import v1Routes from "./v1";
 
-const usersRoute = express.Router();
+const usersRoute = Router();
 
 usersRoute.use('/v1', v1Routes);
 
