@@ -7,7 +7,6 @@ import routeCustomers from "./customers";
 
 const v1Route = Router();
 
-
 v1Route.use('/user', routeUsers);
 v1Route.use('/product', routeProducts);
 v1Route.use('/customers', routeCustomers);

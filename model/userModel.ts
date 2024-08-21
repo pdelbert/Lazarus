@@ -2,6 +2,26 @@ import fetch from 'cross-fetch';
 import { Base64 } from 'js-base64';
 
 
+export const setloginUser = async (body:string) => {
+    const LOGIN_URL = `${process.env.TOKEN_AUTH_URL}`;
+
+    const options = {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: body
+    };
+    
+    const response = await fetch(LOGIN_URL, options)
+    .then((response) => { return response.json() })
+    .catch((error) => { return error.data });
+        
+    return response;
+}
+
+
 export const  getAllUsers = async() => {
     const API_URL = `${process.env.BASE_URL_WORDPRESS}/users`;
     const username = process.env.WP_USER;
