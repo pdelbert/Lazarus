@@ -36,7 +36,7 @@ export const loginUser = async(req:Request, res:Response, next:NextFunction) => 
             });
     }
 
-    return res.status(403).json({ message: 'login error' })
+    return res.status(403).json(response)
 }
 
 export const getAll = async(req:Request, res:Response, next:NextFunction) => {
