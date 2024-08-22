@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 //App Routes
-app.use(routes);
+app.use('/api',routes);
 
 app.listen(PORT, () => {
     console.log(`🍔 Lazarus Server - Listening Port: ${PORT}`);
